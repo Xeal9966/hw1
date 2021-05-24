@@ -1,0 +1,519 @@
+html {
+  color: rgba(255, 255, 255, 0.89);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(img/wp8092631\ 4.png);
+  margin: 0px;
+  width: 100%;
+  background-color: #121212;
+  position: relative;
+  z-index: 1;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.89);
+}
+
+
+/*navbar*/
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.50);
+  z-index: 2;
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: #121212;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  width: 225px;
+}
+
+.menu a{
+  margin-right: 30px;
+}
+
+.menu a:hover {
+  border-bottom: solid #BA0D1D 3px;
+}
+
+.subbed{
+  border-bottom: solid #BA0D1D 3px;
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+#icon_cart{
+  width: 30px;
+  cursor: pointer;
+}
+#icon_cart:hover{
+  filter: invert(79%) sepia(85%) saturate(3948%) hue-rotate(
+    345deg
+    ) brightness(90%) contrast(144%);
+}
+
+#log {
+  width: 35px;
+  background: linear-gradient(1.57deg, #FFFEFE -47.94%, rgba(255, 255, 255, 0) 88.29%), #121212;
+  border-radius: 30px;
+  border: solid #121212 2px;
+  z-index: 3;
+}
+
+#log:hover {
+  border: solid #BA0D1D 2px;
+}
+
+.account {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  right: 3px;
+  top: 42px;
+  backdrop-filter: blur(80px) saturate(500%);
+  background-color: hsla(0, 0%, 100%, .25);
+  width: 200px;
+  border-radius: 10px;
+}
+
+#log1 {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(1.57deg, #FFFEFE -47.94%, rgba(255, 255, 255, 0) 88.29%), #121212;
+  border-radius: 30px;
+}
+
+.write {
+  text-align: center;
+  font-size: 15px;
+}
+
+#ab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  border-radius: 20px;
+  margin: 5px 0px;
+  padding: 2px 0px;
+}
+
+#ab:hover {
+  background-color: rgb(109, 109, 109);
+}
+
+.menumobile{
+  background: linear-gradient(1.57deg, #121212 -47.94%, rgba(255, 255, 255, 0) 88.29%), #121212;
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.menumobile a,.menumobile img{
+  margin: 10px 5px;
+}
+
+#delete{
+  width: 23px;
+}
+
+/*section*/
+
+.cart_container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  min-height: 1500px;
+  padding-top: 100px;
+}
+
+#carrellobello{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-flow: column;
+  padding: 50px 0px;
+}
+#carrellobello span{
+  padding: 10px 10px;
+}
+
+.inputbar{
+  position: relative;
+  padding: 10px 10px;
+}
+
+#input {
+  outline: none;
+  -webkit-appearance: none;
+  background: linear-gradient( 0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #121212;
+  border-radius: 10px;
+  padding-left: 35px;
+  color: rgba(255, 255, 255, 0.89);
+  font-size: 12px;
+  width: 200px;
+  height: 30px;
+  border: solid #121212 3px;
+}
+
+#search {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 23px;
+  top: 19px;
+}
+
+
+.box_giochi{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/*copiati*/
+
+.card {
+  display: flex;
+  flex-flow: column;
+  width: 191px;
+  background: rgba(196, 196, 196, 0.04);
+  border-radius: 5px;
+  margin: 20px 10px;
+}
+
+.pic {
+  border: 1px solid #000000;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.acquista:hover {
+  background-color: #BA0D1D;
+}
+
+.sistema{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  height: 130px;
+}
+
+.acquista {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 26px;
+  align-items: center;
+  border: 2px solid #BA0D1D;
+  width: 105px;
+  margin: 10px 0px;
+  border-radius: 40px;
+}
+
+.carrello {
+  width: 25px;
+  background-color: #BA0D1D;
+  padding: 5px 7px;
+  margin: 0px;
+  margin-right: 5px;
+  border-radius: 13px;
+}
+
+.prezzo {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+}
+
+.anim{
+  background-color: #BA0D1D;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+/*footer*/
+.footer{
+  color: rgba(255, 255, 255, 0.39);
+  padding-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+#credit{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align:start;
+  padding: 20px 10px;
+}
+#cen{
+  text-align: center;
+}
+#credit div{
+  width: 250px;
+}
+
+
+#credit img{
+  width: 150px;
+}
+
+#euro{
+  margin-left: 90px;
+}
+
+#credit2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+
+
+#credit2 img{
+  width: 50px;
+}
+
+#social{
+  display: flex;
+}
+#social img{
+  margin: 15px;
+}
+
+.mobile{
+  display: none;
+  margin: 5px;
+}
+
+#logomobile{
+  width: 75px;
+}
+#burger{
+  width: 23px;
+  z-index: 10;
+}
+
+#pay{
+  width: 400px !important;
+}
+
+@media only screen and (max-width: 950px){
+.logo_addr{
+  display: none;
+}
+
+.mobile{
+  display:  flex;
+}
+
+.menu{
+  display: none;
+}
+
+.card span{
+  font-size: 18px;
+}
+
+}
+
+@media only screen and (max-width: 780px){
+
+.background{
+  height: 500px;
+}
+
+#account_info img{
+  width: 120px;
+}
+
+.copertina{
+  width: 400px;
+  height: 250px;
+}
+
+#titolo{
+  font-size: 18px;
+}
+#bottone{
+  font-size: 18px;
+}
+
+#credit, #credit2{
+  flex-flow: column;
+  text-align: center;
+}
+
+#credit div{
+  margin: 5px 0px;
+}
+
+#credit img{
+  margin: 5px 0px;
+}
+
+#euro{
+  margin-left: 0px;
+}
+
+.spot{
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blocchi{
+  width: 300px;
+  flex-wrap: wrap;
+}
+
+#intes{
+ width: 80vw;
+}
+
+.scroll{
+  width: 80vw;
+}
+
+.card{
+  width: 24vw;
+}
+
+.recbox{
+  font-size: 15px;
+}
+
+.sistema{
+  height: 140px;
+}
+}
+
+@media only screen and (max-width: 500px){
+  .card{
+    width: 122px;
+  }
+
+  .mainnav2{
+    display: none;
+  }
+
+  #titolo{
+    font-size: 16px;
+  }
+  #bottone{
+    font-size: 13px;
+  }
+
+  .scroll{
+    overflow-x: scroll;
+  }
+
+  .copertina{
+    width: 300px;
+    height: 160px;
+  }
+
+  #pay{
+    width: 300px !important;
+  }
+
+  .background{
+    height: 300px;
+  }
+
+  
+.card span{
+  font-size: 15px;
+}
+}
+
+/*loading
+
+.loading{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
+
+.lds-circle {
+  display: inline-block;
+  transform: translateZ(1px);
+}
+.lds-circle > div {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  background: #fff;
+  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
